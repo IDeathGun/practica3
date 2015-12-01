@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Peliculas</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+
+ <body>
+ 
+ <!-- Principal -->
+ <div data-role="page" id="principal">   
+  <div data-role="header">
+    <h1>CATALOGO "PELICULAS"</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <a href="#todas" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">TODAS</a>
+    <a href="#genero" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">GENERO</a>
+    <a href="#titulo" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">TITULO</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Miak y Asociados</h1>
+  </div>
+ </div>  
+ <!-- Principal -->
+
+ </body>
+ 
+ 
+ <body>
+ 
+ <!-- todas -->
+ <div data-role="page" id="todas" >   
+  <div data-role="header">
+    <h1>TODAS LAS "PELICULAS"</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" style="width:20%">
+    <a href="#principal" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">REGRESAR</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Miak y Asociados</h1>
+  </div>
+ </div>  
+ <!--todas -->
+
+ </body>
+ 
+ 
+ <body>
+ 
+ <!-- genero -->
+ <div data-role="page" id="genero">   
+  <div data-role="header">
+    <h1>GENERO "PELICULAS"</h1>
+  </div>
+
+  <div data-role="main" class="ui-content"  style="width:20%">
+    <a href="#principal" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">REGRESAR</a>
+    <a href="#terror" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">TERROR</a>
+    <a href="#comedia" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">COMEDIA</a>
+    <a href="#romance" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">ROMANCE</a>
+    <a href="#ficcion" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">CIENCIA FICCION</a>
+    
+    
+    
+    
+  
+  </div>
+  
+  <div data-role="footer">
+    <h1>Mayk y Asociados</h1>
+  </div>
+ </div>  
+ <!--genero -->
+
+ </body>
+ 
+ 
+ 
+ <body>
+ 
+ <!-- titulo -->
+ <div data-role="page" id="titulo" >   
+  <div data-role="header">
+    <h1>TITULO "PELICULAS"</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <a href="#principal" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">REGRESAR</a>
+    <div  style="width:300px;padding:40px;">
+     Ingresa el "Titulo
+    <input type="text" placeholder="pelicula" id="titulopeli">
+     <a href="#resultadotitulo" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">OKAY</a>
+    
+    </div>
+  </div>
+
+  <div data-role="footer">
+    <h1>Miak y Asociados</h1>
+  </div>
+ </div>  
+ <!--titulo -->
+
+ </body>
+ 
+ 
+  
+ <body>
+ 
+ <!-- resultadotitulo -->
+ <div data-role="page" id="resultadotitulo">   
+  <div data-role="header">
+    <h1>"PELICULAS"</h1>
+  </div>
+
+  <div data-role="main" class="ui-content"  style="width:20%">
+    <a href="#titulo" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">REGRESAR</a>
+    
+  
+  </div>
+  
+  <div data-role="footer">
+    <h1>Mayk y Asociados</h1>
+  </div>
+ </div>  
+ <!--resultadotitulo-->
+
+ </body>
+ 
+ 
+ <body>
+ 
+ <!-- terror -->
+ <div data-role="page" id="terror">   
+  <div data-role="header">
+    <h1>"PELICULAS DE TERROR
+    "</h1>
+  </div>
+
+  <div data-role="main" class="ui-content"  style="width:20%">
+    <a href="#genero" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">REGRESAR</a>
+    
+  
+  </div>
+  
+  <div data-role="footer">
+    <h1>Mayk y Asociados</h1>
+  </div>
+ </div>  
+ <!--terror-->
+
+ </body>
+ 
+ 
+ <body>
+ 
+ <!-- comedia -->
+ <div data-role="page" id="comedia">   
+  <div data-role="header">
+    <h1>"PELICULAS DE COMEDIA"</h1>
+  </div>
+
+  <div data-role="main" class="ui-content"  style="width:20%">
+    <a href="#genero" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">REGRESAR</a>
+    
+  
+  </div>
+  
+  <div data-role="footer">
+    <h1>Mayk y Asociados</h1>
+  </div>
+ </div>  
+ <!--comedia-->
+
+ </body>
+ 
+ 
+ <body>
+ 
+ <!-- romance -->
+ <div data-role="page" id="romance">   
+  <div data-role="header">
+    <h1>"PELICULAS DE ROMANCE"</h1>
+  </div>
+
+  <div data-role="main" class="ui-content"  style="width:20%">
+    <a href="#genero" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">REGRESAR</a>
+    
+  
+  </div>
+  
+  <div data-role="footer">
+    <h1>Mayk y Asociados</h1>
+  </div>
+ </div>  
+ <!--romance-->
+
+ </body>
+ 
+ 
+ <body>
+ 
+ <!-- ficcion -->
+ <div data-role="page" id="ficcion">   
+  <div data-role="header">
+    <h1>"PELICULAS DE CIENCIA FICCION"</h1>
+  </div>
+
+  <div data-role="main" class="ui-content"  style="width:20%">
+    <a href="#genero" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">REGRESAR</a>
+    
+  
+  </div>
+  
+  <div data-role="footer">
+    <h1>Mayk y Asociados</h1>
+  </div>
+ </div>  
+ <!--ficcion-->
+
+ </body>
+ 
+ 
+ 
+</html> 
