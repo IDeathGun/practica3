@@ -2,13 +2,13 @@
  <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->  
  <widget xmlns   = "http://www.w3.org/ns/widgets"  
      xmlns:gap = "http://phonegap.com/ns/1.0"  
-     id    = "com.phonegap.Esqueleto"  
+     id    = "com.phonegap.peliculas"  
      version  = "1.0.0">  
 	 
-   <name> Nombre </name>  
+   <name> Catalogo Peliculas  </name>  
    
    <description>  
-     Primer Ejemplo de eventos
+     Sirve para buscar peliculas 
    </description>  
    
    <author href="https://build.phonegap.com" email="micorreo@gmail.com">  
@@ -17,7 +17,6 @@
    
    <!-- Personaliza la aplicacion y plataforma  -->  
    <preference name="phonegap-version"      value="3.7.0" />    
-   <preference name="orientation"        value="portrait" />    
    <preference name="target-device"       value="universal" />   
    <preference name="fullscreen"         value="true" />      
    <preference name="android-installLocation"  value="auto" />  
