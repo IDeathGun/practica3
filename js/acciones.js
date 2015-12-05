@@ -1,19 +1,22 @@
 // JavaScript Document
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){
-	$('#btn_todas').on('tap', function(){
-      $.ajax({
-		 url: "http://192.168.1.171/practica03/buscartodas.php",
-		 error: function(){
-			alert ("ERROR, no me puedo conectar"); 
-		 },
-		 success: function(respuesta){
-		  alert(respuesta);
-		 }
-		  
-	  });//ajax todas
-
-	});//tap todas
+	$('#btnListado').on ('tap',function (){
+		$.ajax({
+			type:"POST",
+			url:"http://192.168.1.35/practica3/buscartodas.php",
+			data:"",
+			error: function(){
+			alert("error en conecxion");},
+			success: function(respuesta){ var producto = JSON.parse(respuesta);
+			$('#contenido').empty();
+			for(var $x=0; $x < producto.peliculas.lenght;$x++)
+			{$('#contenido').append('  ');}
+			$(':mobile-pagecontainer').pagecontainer('change','#todas', { transition: 'pop'});
+			}
+			});
+			});
+			
 }); 
 });
 
