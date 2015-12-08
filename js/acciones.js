@@ -1,7 +1,7 @@
 // JavaScript Document
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){
-	$("#btnTodo").on('tap', function(){
+	$("#btntodas").on('tap', function(){
 		 $.ajax({
 			  type: "POST",
 			  url: "http://192.168.1.198/practica03/buscartodas.php",
@@ -21,7 +21,7 @@ document.addEventListener("deviceready",function(){
 			   
 			   {
 				   
-				   $('#contenido').append('<div><div>Nombre de la Película:'+ producto.peliculas[$x].nombrePelicula +'</div><div><div style="float:left; width:30%;"><img src="http://192.168.1.198/practica03/recursos/imagenes/fotos/'+ producto.peliculas[$x].clavePelicula +'.jpg"></div><div style="float:left; width:70%;"><div><div style="float:left; width:50%;">Clasificación:'+ producto.peliculas[$x].clasificacionPelicula +'</div><div style="float:left; width:50%;">Género:'+ producto.peliculas[$x].genero +'</div></div><div style="clear:both;"><div style="float:left; width:50%;">Idioma:'+ producto.peliculas[$x].idiomaPelicula +'</div><div style="float:left; width:50%;">Duración:'+ producto.peliculas[$x].duracionPelicula +'</div></div></div></div><div style="clear:both;">Sinópsis:'+ producto.peliculas[$x].sinopsis +'</div></div>');
+				   $('#contenido').append('<div><div>Nombre de la Película:'+ producto.peliculas[$x].nombrePelicula +'</div><div><div><img src="http://192.168.1.198/practica03/recursos/imagenes/fotos/'+ producto.peliculas[$x].clavePelicula +'.jpg"></div><div><div><div>Clasificación:'+ producto.peliculas[$x].clasificacionPelicula +'</div><div >Género:'+ producto.peliculas[$x].genero +'</div></div><div style="clear:both;"><div>Idioma:'+ producto.peliculas[$x].idiomaPelicula +'</div><div >Duración:'+ producto.peliculas[$x].duracionPelicula +'</div></div></div></div><div style="clear:both;">Sinópsis:'+ producto.peliculas[$x].sinopsis +'</div></div>');
 				   }
 			   $(':mobile-pagecontainer').pagecontainer('change','#todas',{
 				transition:'pop'
